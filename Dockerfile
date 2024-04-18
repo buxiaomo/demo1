@@ -1,5 +1,4 @@
 FROM openjdk:21-jdk-slim
-RUN apk upgrade --no-cache
 ARG JAR_PATH=""
 WORKDIR /app
 COPY ${JAR_PATH} ./main.jar
